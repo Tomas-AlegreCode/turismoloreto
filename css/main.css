@@ -1,0 +1,398 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #F5F3EF;
+  color: #333;
+}
+
+/* =========================
+   HEADER MOBILE
+========================= */
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-mobile img {
+  height: 80px;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.hamburger {
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* =========================
+   MENÚ LATERAL
+========================= */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+  background-color: #47677C;
+  padding: 2rem 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 1200;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-nav {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.side-nav a {
+  color: #F5F3EF;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Botón cerrar */
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1100;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 768px) {
+  .header-mobile,
+  .side-menu,
+  .menu-overlay {
+    display: none;
+  }
+}
+.nav-link {
+  color: #333;
+}
+
+.nav-link:hover {
+  color: rgb(177.7777777778, 73.4814814815, 14.2222222222);
+}
+
+/* MENÚ */
+.menu-horizontal {
+  display: flex;
+  width: 100%;
+}
+
+/* ITEM BASE */
+.menu-item {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* COLORES */
+.menu-item.atractivos {
+  background-color: #57601E;
+}
+
+.menu-item.gastronomia {
+  background-color: #47677C;
+}
+
+.menu-item.hospedaje {
+  background-color: #E15D12;
+}
+
+/* HOVER */
+.menu-item:hover {
+  filter: brightness(0.85);
+}
+
+/* ACTIVO */
+.menu-item.active {
+  filter: brightness(0.75);
+}
+
+/* CONTENIDO */
+.menu-content .content {
+  display: none;
+}
+
+.menu-content .content.active {
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .menu-horizontal {
+    flex-direction: column;
+  }
+  .menu-item {
+    font-size: 1.1rem;
+  }
+}
+/* Banner principal: imagen a ancho completo con punto de foco configurable */
+.bannerhome-1 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bannerhome-1 img {
+  width: 100%;
+  height: 60vh;
+  max-height: 800px;
+  display: block;
+  object-fit: cover;
+  object-position: var(--img-focus, center center);
+  z-index: 0;
+}
+
+/* Capa de overlay y texto encima de la imagen */
+.bannerhome-1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.32));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bannerhome-1 .banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  z-index: 2;
+  color: #fff;
+  pointer-events: none;
+}
+
+.bannerhome-1 .banner-text .content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.bannerhome-1 .banner-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.bannerhome-1 .banner-text p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin: 0;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor general que limita el ancho */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* Banner */
+.quehacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  margin: 3rem 0;
+  background-image: url("../../img/color-solido-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Overlay */
+.quehacer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Texto */
+.quehacer-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.quehacer-text p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .quehacer {
+    min-height: 100px;
+  }
+  .quehacer-text p {
+    font-size: 3rem;
+  }
+}
+/* GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Tablet */
+@media (min-width: 576px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Desktop */
+@media (min-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Card clickeable */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagen con texto encima */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+/* Texto sobre la imagen */
+.card-img-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Imagen */
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover */
+.card:hover .card-img-top {
+  filter: blur(3px);
+  transform: scale(1.05);
+}
+
+/* Card hover general */
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  margin-top: 1rem;
+}
+.activity-card:hover {
+  transform: translateY(-6px);
+}
+.activity-card .activity-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+.activity-card .activity-body {
+  padding: 1.8rem;
+}
+.activity-card .activity-body h3 {
+  color: #2c7a47;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

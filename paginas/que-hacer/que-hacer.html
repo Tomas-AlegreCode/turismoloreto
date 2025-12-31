@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo-->
+    <title>Que hacer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <!-- Header mobile y desktop -->
+        <header class="header-mobile d-md-none">
+
+            <!-- Logo -->
+            <div class="logo-mobile">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto">
+            </div>
+
+            <!-- Botón hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </header>
+
+        <!-- OVERLAY -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- MENÚ LATERAL -->
+        <aside class="side-menu" id="sideMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+
+            <nav class="side-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Portal San Antonio</a>
+                <a href="#">Atractivo Turístico</a>
+                <a href="#">Ubicación y Contacto</a>
+            </nav>
+        </aside>
+
+
+        <!-- Header desktop -->
+        <nav class="navbar-desktop d-none d-md-flex align-items-center justify-content-between w-100">
+            <!-- logo -->
+            <div class="logo-desktop d-none d-md-block">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto" width="150" height="100" />
+            </div>
+
+            <!-- Navbar -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/por-sanantonio.html">Portal San Antonio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/atr-turistico.html">Atractivo Turístico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/contacto-ubi.html">Ubicación y contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    <main>
+        <!-- Menu horizontal -->
+        <section class="menu-wrapper">
+
+            <nav class="menu-horizontal">
+                <button class="menu-item atractivos" data-target="atractivos">
+                    QUÉ HACER
+                </button>
+                <button class="menu-item gastronomia" data-target="gastronomia">
+                    DÓNDE COMER
+                </button>
+                <button class="menu-item hospedaje" data-target="hospedaje">
+                    DÓNDE ALOJARSE
+                </button>
+            </nav>
+
+            <div class="menu-content">
+                <div class="content" id="atractivos">
+                    <p>Contenido de atractivos turísticos</p>
+                </div>
+
+                <div class="content" id="gastronomia">
+                    <p>Contenido de gastronomía local</p>
+                </div>
+
+                <div class="content" id="hospedaje">
+                    <p>Contenido de hospedaje</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Cards que hacer -->
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Paseo del Bicentenario y Monolito Fundacional</h3>
+
+                <p class="text-muted">
+                    Mural ventana al Ibera realizado por el artista Alejandro Pizarro.
+                </p>
+
+                <div class="highlight-box mb-3">
+                    Completar con algo mas de info
+                </div>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Esculturas de madera</h3>
+
+                <p class="text-muted">
+                    Se trata de 7 personajes Históricos del pueblo. Entre los que se encuentran: el Cacique Blas Chapay,
+                    José Ignacio Guayare, Pai Pajarito, Oscar Pórtela, Félix Antonio Ramírez, Padre Gallardo y Alberto
+                    Bofill
+
+                <div class="highlight-box mb-3">
+                    Duración: 3 horas · Grupos de 2 a 6 personas
+                </div>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Parroquia Nuestra Señora Loreto</h3>
+
+                <p class="text-muted">
+                    Construida en 1884, es una de las iglesias más antiguas de la provincia de Corrientes.
+                </p>
+
+                <div class="highlight-box mb-3">
+                    <a href="https://maps.app.goo.gl/16Va8fq5kdZjGWdG7">Ubicacion</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Museo de Arte Sacro</h3>
+
+                <p class="text-muted">
+                    Edificio Iglesia Antigua o patrimonio histórico, arquitectónico, cultural y religioso de Corrientes,
+                    puesta en valor como Museo de Arte Sacro que se erige en el antiguo templo, monumento provincial.
+                    Resguarda y custodia las diversas imágenes jesuíticas guaraníes de valor histórico cultural.
+                    Días y horarios de atención:
+                    Lunes a viernes de 8:00 hs a 12:00 hs y de 15hs a 18hs
+                    Sábados y domingo de 9:00 Hs a 12hs
+
+                </p>
+
+                <a href="https://maps.app.goo.gl/W48qAmkqbSkkvafu9">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Museo Artistico de Mario Bofill</h3>
+
+                <p class="text-muted">
+                    Muestra de premios, reconocimientos del autor, asimismo, se puede entrar en contacto con partituras,
+                    discos, CD, cuadros con dedicatorias de sus seguidores, etc.
+                </p>
+
+                <a href="https://maps.app.goo.gl/21juAk9zhkQTYQou5">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Capilla Nuestra Señora de la Candelaria</h3>
+
+                <p class="text-muted">
+                    Ubicada por la calle San Miguel (entre Mendonza y Julian Gonzalez). La imagen, que representa un
+                    legado de las evangelizaciones jesuiticas, data de hacen unos 200 años, se resguarda como una
+                    "reliquia" a traves de la declaracion en 2017 como monumento historico provincial a la capilla y a
+                    la imagen de "Nuestra Señora de la Candelaria", permite habilitar el espacio como punto de atraccion
+                    turistico.
+                </p>
+                <a href="https://maps.app.goo.gl/71MxQfruadF4sEEx6">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Estatua en homenaje al cantautor Mario Bofill</h3>
+
+                <p class="text-muted">
+                    Se encuentra en la plaza central Antonio M. Aponte. Una estatua tamaño real de estilo hiperrealista
+                    de uno de los loretanos mas famosos.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Circuito Loreto Pora-Miradores</h3>
+
+                <p class="text-muted">
+                    Chive Paso y Costa Cenizal.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Sendero del Gaucho Teodor Frutos</h3>
+
+                <p class="text-muted">
+                    Ubicado en el Paraje Arroyo Balmaceda. Es un sendero ubicado dentro del Circuito Camino Turistico
+                    Rural Ordenanza N° 123/09 y N° 143/10; con una amplia y variada biodiversidad de flora y fauna del
+                    Ibera; cerca de Costa Del Cenizal, Estero Malo y El estero Yagua Cuá. El Gaucho Teodoro Fruto quien
+                    fue perseguido allá por año 1800, abatido por la policia en el Paraje Arroyo Balmaceda y cuya
+                    sepultura se mantuviera a lo larfo de los años protegida por el monte nativo.
+                </p>
+
+                <a href="https://maps.app.goo.gl/Mbc7FwVidnocYRkK7">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Balneario Municipal Walberto Piñeiro</h3>
+
+                <p class="text-muted">
+                    Cuenta con cabañas, lugar para acampar, baños diferenciados por sexo, quinchos y parrillas, cancha
+                    de voley, de fubtol y muello con miradores.
+                </p>
+
+                <a href="https://maps.app.goo.gl/UExQXUrYiUwVxYjX9">Ubicacion</a>
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Laguna San Juan</h3>
+
+                <p class="text-muted">
+                    Es un amplio lugar de esparcimiento, de enecuntro, de relajacion o para acampar; envuelta de
+                    naturaleza pura. Se aprecia en la laguna sus extraordinirias aguas cristalinas y abundantes
+                    juncales, que crean una vista reverdeciente y recreativa. Cuenta con un muelle y baños. Con baños,
+                    iluminacion, bancos, quinchos pequeños, basureros, canilla de agua potable, arcos para jugar futbol
+                    y voley.
+                </p>
+
+                <a href="https://maps.app.goo.gl/uBmQwaEepAE1LPAp9">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Portal San Antonio – Aventura Iberá</h3>
+
+                <p class="text-muted">
+                    El complejo turistico Aventura Ibera, ubicado en la localidad de Loreto, el mas cercano para acceder
+                    a los esteros, ya que se encuentra a solo 10 kilometros por camino de ripio, desde el mencionado
+                    predio. Cuenta con Centro de interpretacion del Ibera, un camping y espacio para motorhome. En el
+                    naciento arroyo carambola se encuentra el embarcadero, con su canal de acceso de los Esteros, así
+                    tambien se encuentra la seccional del guarda parques totalmente equipado para la ocacion.
+                </p>
+
+                <a href="https://maps.app.goo.gl/aprEwVNL9SxdkZaWA">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Jardin Botanico de plantas Carnivoras "Jurassic Plant"</h3>
+
+                <p class="text-muted">
+                    Jardin Botanico especializado en plantas carnivoras en los Esteros del Ibera, donde te muestra las
+                    plantas carnivoras del mundo. Dicho jardin posee mas de 130 variedades cultivadas de manera
+                    agroecologica. Ofrece excursiones nocturnas guiadas, excursiones estudiantiles, produccion
+                    agroecologica, conservacion y divulgacion de plantas nativas
+                    Dias de atencion: sabados, domingos y feriados.
+                    Cel: 11-53693232
+                </p>
+
+                <a href="https://maps.app.goo.gl/o7N4ab4Fc9CZw9ep6">Ubicacion</a>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2026 Municipalidad de Loreto - Todos los derechos reservados.</p>
+    </footer>
+
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JS -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

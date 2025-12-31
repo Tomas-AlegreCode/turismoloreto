@@ -1,0 +1,121 @@
+//import variables 
+@import '../variables/variables';
+
+/* =========================
+   HEADER MOBILE
+========================= */
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.8rem 1rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo-mobile img {
+  height: 80px;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.hamburger {
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* =========================
+   MENÚ LATERAL
+========================= */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100vh;
+
+  background-color: $azul-logo;
+  padding: 2rem 1.5rem;
+
+  transition: right 0.3s ease;
+  z-index: 1200;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-nav {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.side-nav a {
+  color: $blanco-logo;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Botón cerrar */
+.close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  z-index: 1100;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+@media (min-width: 768px) {
+  .header-mobile,
+  .side-menu,
+  .menu-overlay {
+    display: none;
+  }
+}

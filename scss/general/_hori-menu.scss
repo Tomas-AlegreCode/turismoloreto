@@ -1,0 +1,70 @@
+/* MENÚ */
+.menu-horizontal {
+  display: flex;
+  width: 100%;
+}
+
+/* ITEM BASE */
+.menu-item {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+
+  padding: 1.5rem 1rem;
+  text-align: center;
+
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* COLORES */
+.menu-item.atractivos {
+  background-color: $verde-logo;
+}
+
+.menu-item.gastronomia {
+  background-color: $azul-logo;
+}
+
+.menu-item.hospedaje {
+  background-color: $naranja-logo;
+}
+
+/* HOVER */
+.menu-item:hover {
+  filter: brightness(0.85);
+}
+
+/* ACTIVO */
+.menu-item.active {
+  filter: brightness(0.75);
+}
+
+/* CONTENIDO */
+.menu-content {
+
+}
+
+.menu-content .content {
+  display: none;
+}
+
+.menu-content .content.active {
+  display: block;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .menu-horizontal {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    font-size: 1.1rem;
+  }
+}

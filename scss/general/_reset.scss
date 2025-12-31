@@ -1,0 +1,15 @@
+// import variables
+@import '../variables/variables';
+
+// Reset some default browser styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: $blanco-logo;
+  color: $text;
+}

@@ -1,0 +1,7 @@
+.nav-link {
+  color: $text;
+}
+
+.nav-link:hover {
+  color: darken($naranja-logo, 10%);
+}

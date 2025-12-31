@@ -1,0 +1,69 @@
+/* GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr; // mobile
+  gap: 1.5rem;
+}
+
+/* Tablet */
+@media (min-width: 576px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card clickeable */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagen con texto encima */
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+/* Texto sobre la imagen */
+.card-img-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Imagen */
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover */
+.card:hover .card-img-top {
+  filter: blur(3px);
+  transform: scale(1.05);
+}
+
+/* Card hover general */
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}

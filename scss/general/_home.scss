@@ -1,0 +1,110 @@
+/* Banner principal: imagen a ancho completo con punto de foco configurable */
+.bannerhome-1 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bannerhome-1 img {
+  width: 100%;
+  height: 60vh;
+  max-height: 800px;
+  display: block;
+  object-fit: cover;
+  object-position: var(--img-focus, center center);
+  z-index: 0;
+}
+
+/* Capa de overlay y texto encima de la imagen */
+.bannerhome-1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.32));
+  z-index: 1;
+  pointer-events: none;
+}
+.bannerhome-1 .banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  z-index: 2;
+  color: #fff;
+  pointer-events: none;
+}
+.bannerhome-1 .banner-text .content {
+  max-width: 1100px;
+  width: 100%;
+}
+.bannerhome-1 .banner-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.bannerhome-1 .banner-text p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin: 0;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+//banner text que hacer
+/* Contenedor general que limita el ancho */
+.container {
+  max-width: 1100px;     // 👈 acá se achica el banner
+  margin: 0 auto;        // centra
+  padding: 0 3rem;       // aire lateral en mobile
+}
+
+/* Banner */
+.quehacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100px;     // banner plano
+  margin: 3rem 0;
+
+  background-image: url("../../img/color-solido-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  border-radius: 8px;    // opcional, queda muy bien
+  overflow: hidden;      // respeta el borde
+}
+
+/* Overlay */
+.quehacer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Texto */
+.quehacer-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.quehacer-text p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .quehacer {
+    min-height: 100px;
+  }
+
+  .quehacer-text p {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo-->
+    <title>Donde Comer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <main>
+        <!--Header mobile y desktop-->
+        <header class="header-mobile d-md-none">
+
+            <!-- Logo -->
+            <div class="logo-mobile">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto">
+            </div>
+
+            <!-- Botón hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </header>
+
+        <!-- OVERLAY -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- MENÚ LATERAL -->
+        <aside class="side-menu" id="sideMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+
+            <nav class="side-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Portal San Antonio</a>
+                <a href="#">Atractivo Turístico</a>
+                <a href="#">Ubicación y Contacto</a>
+            </nav>
+        </aside>
+
+        <!-- Header desktop -->
+        <nav class="navbar-desktop d-none d-md-flex align-items-center justify-content-between w-100">
+            <!-- logo -->
+            <div class="logo-desktop d-none d-md-block">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto" width="150" height="100" />
+            </div>
+
+            <!-- Navbar -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/por-sanantonio.html">Portal San Antonio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/atr-turistico.html">Atractivo Turístico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/contacto-ubi.html">Ubicación y contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Menu horizontal -->
+        <section class="menu-wrapper">
+
+            <nav class="menu-horizontal">
+                <button class="menu-item atractivos" data-target="atractivos">
+                    QUÉ HACER
+                </button>
+                <button class="menu-item gastronomia" data-target="gastronomia">
+                    DÓNDE COMER
+                </button>
+                <button class="menu-item hospedaje" data-target="hospedaje">
+                    DÓNDE ALOJARSE
+                </button>
+            </nav>
+
+            <div class="menu-content">
+                <div class="content" id="atractivos">
+                    <p>Contenido de atractivos turísticos</p>
+                </div>
+
+                <div class="content" id="gastronomia">
+                    <p>Contenido de gastronomía local</p>
+                </div>
+
+                <div class="content" id="hospedaje">
+                    <p>Contenido de hospedaje</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Cards donde comer -->
+
+        <!--Comedor doña hicha-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Comedor Doña Hicha</h3>
+
+                <p class="text-muted">
+                    Direccion: Paraguay y Salta <br>
+                    Cel: 3794-705009 <br>
+                    Horario de atencion: Martes a Domingo de 11 a 15 hs y de 19 a 00.30 <br>
+                    capacidad para comensales: 30 <br>
+                    <strong>Info:</strong> Variedad de platos, no cuenta con delivery.
+                </p>
+
+                <a href="https://maps.app.goo.gl/bbfw6pRj9fa1JeUr8">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Roti Fritanga-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Rotiseria Fritanga</h3>
+
+                <p class="text-muted">
+                    Direccion: Bartolome Mitre y Tomas Ubeda <br>
+                    Cel: 3794-889200 <br>
+                    Horarios de atencion: Lunes a Lunes de 10 a 14.30 hs y de 19 a 01 hs. <br>
+                    <strong>Info:</strong> Varios tipos de menúes, cuenta con delivery.
+                </p>
+
+                <a href="https://maps.app.goo.gl/wpL7voqhND7hbNLJ8">Ubicacion</a>
+            </div>
+        </div>
+
+        <!--Resto Bar la Farola-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Resto Bar la Farola</h3>
+
+                <p class="text-muted">
+                    Direccion: Av. 25 de mayo y Sabas Gallardo <br>
+                    Cel: 11-313030520 <br>
+                    Horarios de atencion: Lunes a Sabados unicamente por la noche de 20hs a 00hs. <br>
+                    <strong>Info:</strong> Ofrece menúes de comida rapida, cuenta con espacio interno y al aire libre,
+                    con delivery. <br>
+                    Capacidad: 40 personas.
+                </p>
+
+                <a href="https://maps.app.goo.gl/oowTdJ9qaNorjJqA8">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--La estacion bar-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>La Estacion Bar</h3>
+
+                <p class="text-muted">
+                    Direccion: Av. 25 de Mayo entre Junin y Brasil <br>
+                    Cel: 3781-492624 <br>
+                    Horarios de atencion: Martes a Domingo de 20hs a 00 hs (fines de semana hasta las 05 am) <br>
+                    <Strong>Info:</Strong> Cuenta con delivery y para comsumir en el lugar. Menú variado <br>
+                    Capacidad para 30 a 35 personas.
+                </p>
+
+            </div>
+        </div>
+
+        <!--Resto La Casona-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Resto La Casona</h3>
+
+                <p class="text-muted">
+                    Direccion: Rivadavia y San Martin <br>
+                    Cel: 3794-670324 <br>
+                    Horarios de atencion: Abierto al publico todo el dia. Con desayuno, almuerzo, merienda y cena. Menú
+                    variado. <br>
+                    <Strong>Info:</Strong> : Con delivery. <br>
+                    Capacidad: 50 personas.
+                </p>
+
+                <a href="https://maps.app.goo.gl/oowTdJ9qaNorjJqA8">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Delicias Cande-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Delicias Cande</h3>
+
+                <p class="text-muted">
+                    Direccion: San Martin <br>
+                    Cel: 3794-610175 <br>
+                    Horarios de atencion: Lunes a Sabado de 19hs hs a 23.30hs <br>
+                    <Strong>Info:</Strong> : Menu de comida rapida, unicamente para delivery.
+                </p>
+                <a href="https://maps.app.goo.gl/X7cLED9RkuvGhiWBA">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Resto y Bar Queen-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Resto y Bar Queen</h3>
+
+                <p class="text-muted">
+                    Direccion: Armengol Alegre y Junin. <br>
+                    Cel: 3781-484437 <br>
+                    Horarios de atencion: Lunes a Domingo de 20.30hs a 00 hs. Miercoles cerrado. <br>
+                    <Strong>Info:</Strong> : Cuenta con delivery.
+                    Capacidad: 30 personas.
+                </p>
+            </div>
+        </div>
+
+        <!--Roti Cata-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Rotiseria Cata</h3>
+
+                <p class="text-muted">
+                    Direccion: Armengol Alegre y Paraguay. <br>
+                    Cel: 3794-158549 <br>
+                    Horarios de atencion: Lunes a lunes de 19.30 a 23.30hs. <br>
+                    <Strong>Info:</Strong> : Menú de comida rapida, unicamente para delivery.
+                </p>
+            </div>
+        </div>
+
+        <!--Rotiseria Mi Luz-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Rotiseria Mi Luz</h3>
+
+                <p class="text-muted">
+                    Direccion: Barrio Progreso <br>
+                    Cel: 3781-492587 <br>
+                    Horarios de atencion: todos los dias. <br>
+                    <Strong>Info:</Strong> Unicamente para delivery.
+                </p>
+            </div>
+        </div>
+
+        <!--Ñande Gusto-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Ñande Gusto de Valeria Molina</h3>
+
+                <p class="text-muted">
+                    Direccion: Mendoza Esquina ituzaingo. <br>
+                    Cel: 3781-405252 <br>
+                    <Strong>Info:</Strong> : Comidas tipicas, capacidad para 20 personas. Reservas con 24 hs de
+                    aticipacion. Atiende todos los dias y ofrece desayuno merienda cena y almuerzo.
+                </p>
+                <a href="https://maps.app.goo.gl/5PZKnbep6q7XXBo87">Ubicacion</a>
+            </div>
+        </div>
+
+        <!--Heladeria La Avenida-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Heladeria La Avenida</h3>
+
+                <p class="text-muted">
+                    Direccion: Av. 25 de Mayo y Brasil. <br>
+                </p>
+            </div>
+        </div>
+
+        <!--Heladeria Ma&Co-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Heladeria Ma&Co</h3>
+
+                <p class="text-muted">
+                    Direccion: Tomas Ubeda y Brasil. <br>
+                    Cel: 11-30721655 <br>
+                    <Strong>Info:</Strong> : Ofrece tambien desayuno, café, chipacitos y media lunas.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Municipalidad de Loreto - Todos los derechos reservados.</p>
+    </footer>
+
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JS -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

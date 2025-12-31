@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo-->
+    <title>Donde Alojarse</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!--Css-->
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+
+<body>
+    <main>
+        <!--Header mobile y desktop-->
+        <header class="header-mobile d-md-none">
+
+            <!-- Logo -->
+            <div class="logo-mobile">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto">
+            </div>
+
+            <!-- Botón hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </header>
+
+        <!-- OVERLAY -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- MENÚ LATERAL -->
+        <aside class="side-menu" id="sideMenu">
+            <button class="close-menu" id="closeMenu">✕</button>
+
+            <nav class="side-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Portal San Antonio</a>
+                <a href="#">Atractivo Turístico</a>
+                <a href="#">Ubicación y Contacto</a>
+            </nav>
+        </aside>
+
+        <!-- Header desktop -->
+        <nav class="navbar-desktop d-none d-md-flex align-items-center justify-content-between w-100">
+            <!-- logo -->
+            <div class="logo-desktop d-none d-md-block">
+                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto" width="150" height="100" />
+            </div>
+
+            <!-- Navbar -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/por-sanantonio.html">Portal San Antonio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/atr-turistico.html">Atractivo Turístico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="paginas/contacto-ubi.html">Ubicación y contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Menu horizontal -->
+        <section class="menu-wrapper">
+
+            <nav class="menu-horizontal">
+                <button class="menu-item atractivos" data-target="atractivos">
+                    QUÉ HACER
+                </button>
+                <button class="menu-item gastronomia" data-target="gastronomia">
+                    DÓNDE COMER
+                </button>
+                <button class="menu-item hospedaje" data-target="hospedaje">
+                    DÓNDE ALOJARSE
+                </button>
+            </nav>
+
+            <div class="menu-content">
+                <div class="content" id="atractivos">
+                    <p>Contenido de atractivos turísticos</p>
+                </div>
+
+                <div class="content" id="gastronomia">
+                    <p>Contenido de gastronomía local</p>
+                </div>
+
+                <div class="content" id="hospedaje">
+                    <p>Contenido de hospedaje</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Cards donde alojarse -->
+        <!--Hosteria Nderoga-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hosteria Nderoga</h3>
+
+                <p class="text-muted">
+                    Direccion Mendoza y Paraguay <br>
+                    Cel: 3781-409738 <br>
+                    <Strong>Disponibilidad de plazas: 5 matrimoniales, 5 individuales</Strong>
+                </p>
+
+                <a href="https://maps.app.goo.gl/8GmgDiWQFvq6Hps8A">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Hospedaje "La esquina"-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hospedaje "La Esquina"</h3>
+
+                <p class="text-muted">
+                    Direccion: Tomas Ubeda y Sebas Gallardo <br>
+                    Cel: 3781-489060 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 3 matrimoniales, 15 individuales.
+                </p>
+
+                <a href="https://maps.app.goo.gl/uPSERDxwBtXDgcMq7">Ubicacion</a>
+            </div>
+        </div>
+
+        <!--Hospedaje Priscila-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hospedaje Priscila</h3>
+
+                <p class="text-muted">
+                    Direccion: Av. 25 de mayo y RN 118 <br>
+                    Cel: 11-313030520 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 3 matrimoniales, 6 individuales.
+                </p>
+
+                <a href="https://maps.app.goo.gl/1aeio8ntRzYmNgsH9">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--De las Huellas-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Posadas de la Huellas</h3>
+
+                <p class="text-muted">
+                    direccion: Armengol Alegre esquina San Miguel <br>
+                    Cel: 3794-283442 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 14 plazas
+                </p>
+
+                <a href="https://maps.app.goo.gl/JdYMTPLV3skj1WAe6">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Loreto Guest House-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Loreto Guest House</h3>
+
+                <p class="text-muted">
+                    Direccion: Brasil y Av. 25 de Mayo <br>
+                    Cel: 3781-491705 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : matrimonial, 2 individuales.
+                </p>
+
+                <a href="https://maps.app.goo.gl/34LCUq15LjeX2q8JA">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Koevy-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hospedaje Koevy</h3>
+
+                <p class="text-muted">
+                    Direecion: Junin y Armengol Alegre <br>
+                    Cel: 3781-402077 / 484437 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 2 matrimoniales, 16 individuales.
+                </p>
+                <a href="https://maps.app.goo.gl/X7cLED9RkuvGhiWBA">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Cabañas che gente cuera-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Cabañas Che Gente Cuera</h3>
+
+                <p class="text-muted">
+                    Direccion: 9de Julio y 25 de Mayo. <br>
+                    Cel: 3781-401432 / 491705 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 2 matrimoniales, 2 individuales y 2 cuchetas.
+                </p>
+
+                <a href="https://maps.app.goo.gl/G5aKCCXoJVrkbqT67">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Kuarahji-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hosteria Kuarajhi</h3>
+
+                <p class="text-muted">
+                    Direccion: San Martin y 9 de Julio. <br>
+                    Cel: 3794-380416 / 3781-497055 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 4 matrimoniales, 12 individuales.
+                </p>
+                <a href="https://maps.app.goo.gl/Q1poUtGzwhGz5ya2A">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--Ibera Birding-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Ibera Birding</h3>
+
+                <p class="text-muted">
+                    Direccion: Paraje Ita Paso <br>
+                    Cel: 11-61283667 / 3794-521779 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 1 matrimonial, 2 individuales.
+                </p>
+
+                <a href="https://maps.app.goo.gl/voUzCvLwxrdV9BHk6">Ubicacion</a>
+
+            </div>
+        </div>
+
+        <!--La querencia-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>La Querencia</h3>
+
+                <p class="text-muted">
+                    Direccion: Paraje Ita Paso. <br>
+                    Cel: 3781-482305 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : 1 matrimonial, 1 cucheta.
+                </p>
+            </div>
+        </div>
+
+        <!--Maria Ines Barrios-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Maria Ines Barrios</h3>
+
+                <p class="text-muted">
+                    Direccion: Barrio Hipodromo. <br>
+                    Cel: 3781-609416 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : Departamento de alquiler por dia, con una habitacion,
+                    cocina-comedor, baño privado y chochera.
+                </p>
+            </div>
+        </div>
+
+        <!--Posada Angiru-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Posada Angiru</h3>
+
+                <p class="text-muted">
+                    Direccion: Av. 25 de Mayo esquina Mario Bofill <br>
+                    Cel: 3781-484540 <br>
+                    <Strong>Disponibilidad de plazas</Strong> : Cuenta con 2 habitaciones para 5 personas. Una
+                    habitacion con cama doble y otra con camas individuales.
+                </p>
+            </div>
+        </div>
+
+        <!--Hospedaje San Francisco-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hospedaje San Francisco<h3>
+
+                        <p class="text-muted">
+                            Direccion: Junin entre San Martin y Tomas Ubeda <br>
+                            Cel: 3794-759230 / 723143 / 3795-320964 <br>
+                            <Strong>Disponibilidad de plazas</Strong> : Habitacion amplia con baño privado, 3 plazas en
+                            total; cama matrimonial + una cucheta. Living, cocina, comedor, heladera, vajilla, ropa de
+                            cama, sin quincho, patio amplio, acepta niños y mascotas, posee grupo electrogeno.
+                        </p>
+
+            </div>
+        </div>
+
+        <!--Hospedaje La Familia-->
+        <div class="activity-card" data-aos="fade-up">
+            <a href="../img/actividades/portal-san-antonio.jpeg" data-lightbox="actividad">
+                <img src="../../img/que-hacer/example3-1254x836.jpg" alt="Portal San Antonio" class="activity-img" />
+            </a>
+
+            <div class="activity-body">
+                <h3>Hospedaje La Familia<h3>
+
+                        <p class="text-muted">
+                            Direccion: Paraguay y Santa Fe. <br>
+                            Cel: 3781-441552 <br>
+                        </p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>© 2026 Municipalidad de Loreto - Todos los derechos reservados.</p>
+    </footer>
+
+    <!--Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Script JS -->
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
