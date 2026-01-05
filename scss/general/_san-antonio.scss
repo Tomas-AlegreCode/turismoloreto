@@ -1,0 +1,243 @@
+.txt-info {
+  max-width: 1050px;          /* ancho cómodo de lectura */
+  margin: 4rem auto;         /* centra y da aire arriba/abajo */
+  padding: 0 1.5rem;         /* aire lateral en mobile */
+}
+
+
+.txt-info p {
+  font-size: 1.05rem;
+  line-height: 1.75;         /* clave para que se vea editorial */
+  color: #222;
+  margin-bottom: 1.4rem;
+  text-align: justify;  
+  hyphens: auto;        /* como en la imagen */
+}
+
+@media (min-width: 768px) {
+  .txt-info {
+    padding: 0;              /* ya no hace falta padding lateral */
+  }
+
+  .txt-info p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-section p {
+    text-align: left;
+  }
+}
+
+//card estilos especiales para san antonio
+.activity-block {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen grande */
+.activity-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido debajo */
+.activity-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Cada columna */
+.activity-column h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c7a47;
+  margin-bottom: 1rem;
+}
+
+.activity-column p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.activity-column ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.activity-column ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* 🖥 Desktop */
+@media (min-width: 768px) {
+  .activity-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 3rem;
+  }
+
+  .activity-image img {
+    height: 480px;
+  }
+}
+
+.activity-image {
+  position: relative;
+}
+
+/* Imagen */
+.activity-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Capa oscura para legibilidad */
+.activity-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.15)
+  );
+}
+
+/* Texto hero */
+.hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 2;
+  color: #fff;
+  max-width: 70%;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .activity-image img {
+    height: 480px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-text {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+// galeria de experiencias
+/* ===== GALERÍA CARRUSEL ===== */
+
+.gallery-title {
+  font-weight: 700;
+  color: #2c7a47;
+}
+
+.gallery-swiper {
+  padding-bottom: 40px;
+}
+
+.gallery-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay */
+.gallery-item::after {
+  content: "Ver imagen";
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 122, 71, 0.55);
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Swiper controles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2c7a47;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2c7a47;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .gallery-item img {
+    height: 220px;
+  }
+}
+
+

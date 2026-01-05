@@ -67,16 +67,15 @@
 
   min-height: 100px;     // banner plano
   margin: 3rem 0;
-
-  background-image: url("../../img/color-solido-banner.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  
+  /* Usar color de fondo en lugar de imagen; variable CSS por defecto para fácil ajuste */
+  background-color: var(--quehacer-bg, $verde-logo);
 
   position: relative;
   border-radius: 8px;    // opcional, queda muy bien
   overflow: hidden;      // respeta el borde
 }
+
 
 /* Overlay */
 .quehacer::before {
@@ -106,5 +105,44 @@
 
   .quehacer-text p {
     font-size: 3rem;
+  }
+}
+
+//boton ver mas
+
+/* Botón "Ver más" para la sección .cards-quehacer */
+.btn-ver-mas-section {
+  display: block;
+
+  .btn-ver-mas {
+    display: inline-block;
+    background-color: $naranja-logo;
+    color: $blanco-logo;
+    padding: 0.75rem 1.5rem;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  }
+
+  .btn-ver-mas:hover,
+  .btn-ver-mas:focus {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+    text-decoration: none;
+  }
+
+  .btn-ver-mas:active {
+    transform: translateY(0);
+    filter: brightness(0.9);
+  }
+
+  @media (max-width: $tablet) {
+    .btn-ver-mas {
+      width: 100%;
+      text-align: center;
+      padding: 0.85rem;
+    }
   }
 }

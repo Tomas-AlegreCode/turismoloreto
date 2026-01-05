@@ -38,3 +38,47 @@ function closeMenu() {
   sideMenu.classList.remove('open');
   overlay.classList.remove('active');
 }
+
+//carrusel 
+// ===============================
+// GALERÍA CARRUSEL (SWIPER)
+// ===============================
+document.addEventListener("DOMContentLoaded", function () {
+  const gallerySwiper = new Swiper(".gallery-swiper", {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    loop: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2.5,
+      },
+      1024: {
+        slidesPerView: 3.5,
+      },
+    },
+  });
+
+  // ===============================
+  // LIGHTBOX CONFIG
+  // ===============================
+  if (window.lightbox) {
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: true,
+      alwaysShowNavOnTouchDevices: true,
+      fadeDuration: 200,
+    });
+  }
+});
+

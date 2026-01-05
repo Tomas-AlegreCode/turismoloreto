@@ -1,0 +1,39 @@
+.lista-menuhori {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas en mobile */
+  gap: 1rem;
+  padding: 0;
+  margin: 2rem 1rem;
+  list-style: none;
+}
+
+.lista-menuhori li a {
+  display: block;
+  padding: 1rem;
+  background: #f8f8f8;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.lista-menuhori li a:hover {
+  background: #e0f2ec;
+}
+
+//desktop
+
+@media (min-width: 768px) {
+  .lista-menuhori {
+    grid-template-columns: none;
+	grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    //max-width: 900px;
+    margin: 3rem auto;
+  }
+}
+
+
+

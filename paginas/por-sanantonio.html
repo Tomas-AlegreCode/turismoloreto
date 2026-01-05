@@ -12,6 +12,12 @@
 
     <!--Css-->
     <link rel="stylesheet" href="../../css/main.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -20,9 +26,9 @@
     <header>
 
         <!-- Logo -->
-        <section class="header-mobile d-md-none">
-            <div class="logo-mobile">
-                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto">
+        <section class="header-mobile d-md-none justify-content-center">
+            <div class="logo-mobile ">
+                <img src="../img/LOGOS/Isologo-en-naranja.png" alt="Logo Municipalidad de Loreto" width="100" />
             </div>
 
             <!-- Botón hamburguesa -->
@@ -35,22 +41,23 @@
         </section>
 
         <!-- Header desktop -->
-        <nav class="navbar-desktop d-none d-md-flex align-items-center justify-content-between w-100">
+        <nav class="navbar-desktop d-none d-md-flex align-items-center justify-content-center w-100">
             <!-- logo -->
             <div class="logo-desktop d-none d-md-block">
-                <img src="../../img/logo-jpg.jpeg" alt="Logo Municipalidad de Loreto" width="150" height="100" />
+                <img src="../img/LOGOS/Logo-en-naranja.png" alt="Logo Municipalidad de Loreto" width="150"
+                    height="150" />
             </div>
 
             <!-- Navbar -->
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="paginas/por-sanantonio.html">Portal San Antonio</a>
+                    <a class="nav-link" href="./paginas/por-sanantonio.html">Portal San Antonio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="paginas/atr-turistico.html">Atractivo Turístico</a>
+                    <a class="nav-link" href="./paginas/atr-turistico.html">Atractivo Turístico</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="paginas/contacto-ubi.html">Ubicación y contacto</a>
+                    <a class="nav-link" href="./paginas/contacto-ubi.html">Ubicación y contacto</a>
                 </li>
             </ul>
         </nav>
@@ -63,10 +70,10 @@
             <button class="close-menu" id="closeMenu">✕</button>
 
             <nav class="side-nav">
-                <a href="#">Inicio</a>
-                <a href="#">Portal San Antonio</a>
-                <a href="#">Atractivo Turístico</a>
-                <a href="#">Ubicación y Contacto</a>
+                <a href="index.html">Inicio</a>
+                <a href="./paginas/por-sanantonio.html">Portal San Antonio</a>
+                <a href="./paginas/atr-turistico.html">Atractivo Turístico</a>
+                <a href="./paginas/contacto-ubi.html">Ubicación y Contacto</a>
             </nav>
         </aside>
 
@@ -75,27 +82,99 @@
 
             <nav class="menu-horizontal">
                 <button class="menu-item atractivos" data-target="atractivos">
-                    QUÉ HACER
+                    ACTIVIDADES
                 </button>
                 <button class="menu-item gastronomia" data-target="gastronomia">
-                    DÓNDE COMER
+                    GASTRONOMIA
                 </button>
                 <button class="menu-item hospedaje" data-target="hospedaje">
-                    DÓNDE ALOJARSE
+                    HOSTELERIA
                 </button>
             </nav>
 
             <div class="menu-content">
                 <div class="content" id="atractivos">
-                    <p>Contenido de atractivos turísticos</p>
-                </div>
-
-                <div class="content" id="gastronomia">
-                    <p>Contenido de gastronomía local</p>
+                    <p>
+                    <ul class="lista-menuhori">
+                        <li><a href="./paginas/que-hacer/que-hacer.html#paseo-bicentenario">Paseo del Bicentenario</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#esculturas-de-madera">Esculturas de Madera</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#nuestra-señora-de-loreto">Parroquia Nuestra
+                                Señora de
+                                Loreto</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#arte-sacro">Museo de arte Sacro</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#museo-bofill">Museo Artistico Mario Bofill</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#candelaria">Capilla Nuestra Señora de la
+                                Candelaria</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#estatua-bofill">Estatua en homenaje al cantautor
+                                Mario
+                                Bofill</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#pora-miradores">Circuito Loreto Miradores
+                                Porá</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#teodor-frutos">Sendero Gaucho Teodor Frutos</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#balneario">Balneario Municpal Walberto
+                                Piñeiro</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#laguna-san-juan">Laguna San Juan</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#san-antonio">Portal San Antonio - Aventura
+                                Iberá</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#jurassic-plant">Jardin Botanico de plantas
+                                carnivoras
+                                Jurassic Plant</a></li>
+                    </ul>
+                    </p>
                 </div>
 
                 <div class="content" id="hospedaje">
-                    <p>Contenido de hospedaje</p>
+                    <p>
+                    <ul class="lista-menuhori">
+                        <li><a href="./paginas/que-hacer/que-hacer.html#nderoga">Hosteria Nderoga</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#la-esquina">Hospedaje La Esquina</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#priscila">Hospedaje Priscila</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#huellas">Posadas de las huellas</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#guest-house">Loreto Guest House</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#koevy">Hospedaje Koevy</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#che-gente">Cabañas Che Gente Cuera</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#kuarajhi">Hosteria Kuarajhi</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#birding">Ibera Birding</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#querencia">La Querencia</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#maria">Maria Ines Barrios</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#angiru">Posada Angiru</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#san-francisco">Hospedaje San Francisco</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#la-familia">Hospedaje La Familia</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="content" id="gastronomia">
+                    <p>
+                    <ul class="lista-menuhori">
+                        <li><a href="./paginas/que-hacer/que-hacer.html#doña-hicha">Comedor Doña Hicha</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#fritanga">Rotiseria Fritanga</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#farola">Resto Bar La Farola</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#estacion">La Estacion Bar</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#casona">Resto La Casona</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#delicias">Delicias Cande</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#queen">Resto y Bar Queen</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#cata">Rotiseria Cata</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#mi-luz">Rotiseria Mi Luz</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#ñande-gusto">Ñande Gusto</a>
+                        </li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#avenida">Heladeria la Avenida</a></li>
+                        <li><a href="./paginas/que-hacer/que-hacer.html#mayco">Heladeria Ma&Co</a>
+                        </li>
+                    </ul>
+                    </p>
                 </div>
             </div>
 
@@ -104,9 +183,179 @@
     </header>
 
     <main>
-        <h1>
-            Portal San Antonio
-        </h1>
+
+        <!-- Img main -->
+        <div class="bannerhome-1">
+            <img src="../img/portal-san-antonio.jpg" alt="Imagen del muelle de loreto">
+            <div class="banner-text">
+                <div class="content">
+                    <h2>Portal San Antonio</h2>
+                    <p>Municipalidad de Loreto — descubre nuestros atractivos</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="txt-info">
+
+            <p>
+                El complejo AVENTURA IBERÁ PORTAL SAN ANTONIO LORETO, posee una ubicación privilegiada sobre la RN 118,
+                en la Colonia San Antonio, A 15 km. tan solo 10 minutos del pueblo de Loreto y a 30 minutos de San
+                Miguel. Desde RN n° 12 e interseccion RN n° 118 a 45 km. y desde RN n° 118 a solo 13 km.
+            </p>
+
+            <p>Por su ubicación el Municipio de Loreto, es la población mas cercana; allí la cultura gauchesca
+                correntina está muy presente y la influencia jesuítica guarany se respira en todos sus rincones.
+            </p>
+
+            <p>En este complejo encontraran el centro de interpretación cultural religioso y la sala ibera, comedor
+                (capacidad para 100/150 comensales), cocina, galerías con fotografías de aves, senderos con
+                biodiversidad de floras y faunas.
+            </p>
+
+            <p>El camping cuenta con: amplio lugar de acampe, quinchos con parrillas y electricidad, baños, duchas,
+                agua caliente y es un excelente lugar ideal para asomarse a este mundo de naturaleza autentica y
+                protegida.
+            </p>
+
+            <p>Esta abierto durante todo el año; se sugiere ingresar con un guía de sitio y contratar las distintas
+                actividades: NAÚTICAS O EXCURSIONES GUIADAS.
+            </p>
+        </section>
+
+        <!--Paseos en lancha-->
+        <div class="container py-5">
+            <div class="activity-block" data-aos="fade-up">
+
+                <!-- Imagen principal -->
+                <div class="activity-image">
+                    <img src="../img/portal/lancha.jpg" alt="Paseo en lancha por los esteros de Loreto" />
+
+                    <!-- TEXTO HERO -->
+                    <div class="hero-text">
+                        <h1>Paseos en lancha</h1>
+                        <p>Descubre el alma de los Esteros del Iberá en un viaje único</p>
+                    </div>
+                </div>
+
+                <!-- Contenido -->
+                <div class="activity-content">
+                    <div class="activity-column">
+                        <h2>Aramí Excursiones</h2>
+                        <p>
+                            Guias
+                        </p>
+                        <ul>
+                            <li>Yesica: 3794- 636366</li>
+                            <li>Orlando: 3781 403428</li>
+                            <li>Lengua: Español</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-column">
+                        <h2>Guyra Wild Guides</h2>
+                        <p>
+                            Guias
+                        </p>
+                        <ul>
+                            <li>Yamil: 3781482017 </li>
+                            <li>Florencia: 3794-706389</li>
+                            <li>Lengua: Español</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Paseos en kayak-->
+        <div class="container py-5">
+            <div class="activity-block" data-aos="fade-up">
+
+                <!-- Imagen principal -->
+                <div class="activity-image">
+                    <img src="../img/portal/kayak.jpg" alt="Paseo en lancha por los esteros de Loreto" />
+
+                    <!-- TEXTO HERO -->
+                    <div class="hero-text">
+                        <h1>Paseos en kayak</h1>
+                        <p>Una experiencia única en los Esteros del Iberá</p>
+                    </div>
+                </div>
+
+                <!-- Contenido -->
+                <div class="activity-content">
+                    <div class="activity-column">
+                        <h2>Iberá Kayaks</h2>
+                        <p>
+                            Guias
+                        </p>
+                        <ul>
+                            <li>Yesica: 3794- 636366</li>
+                            <li>Orlando: 3781 403428</li>
+                            <li>Lengua: Español</li>
+                        </ul>
+                    </div>
+
+                    <div class="activity-column">
+                        <h2>Rumbo Iberá</h2>
+                        <p>
+                            Guias
+                        </p>
+                        <ul>
+                            <li>Ariel: 3794-629144</li>
+                            <li>Lengua: Español</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Galeria de experiencias-->
+        <section class="container py-5 gallery-section">
+            <h2 class="gallery-title text-center mb-4">
+                Galería de Experiencias
+            </h2>
+
+            <div class="swiper gallery-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="../img/galeria/lancha.jpg" data-lightbox="loreto-gallery"
+                            data-title="Paseos náuticos en los Esteros" class="gallery-item">
+                            <img src="../img/galeria/lancha.jpg" alt="Paseo en lancha" />
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="../img/galeria/aves.jpg" data-lightbox="loreto-gallery"
+                            data-title="Observación de aves" class="gallery-item">
+                            <img src="../img/galeria/aves.jpg" alt="Aves del Iberá" />
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="../img/galeria/galeria-3.jpeg" data-lightbox="loreto-gallery"
+                            data-title="Senderos naturales" class="gallery-item">
+                            <img src="../img/galeria/galeria-3.jpeg" alt="Senderos" />
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="../img/galeria/galeria-4.jpeg" data-lightbox="loreto-gallery"
+                            data-title="Fauna del Iberá" class="gallery-item">
+                            <img src="../img/galeria/galeria-4.jpeg" alt="Fauna" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer>
