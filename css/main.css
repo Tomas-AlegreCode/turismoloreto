@@ -616,69 +616,75 @@ body {
     font-size: 1rem;
   }
 }
-/* ===== GALERÍA CARRUSEL ===== */
-.gallery-title {
-  font-weight: 700;
-  color: #2c7a47;
-}
-
-.gallery-swiper {
-  padding-bottom: 40px;
-}
-
-.gallery-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.gallery-item img {
+.gallery-img {
+  height: 420px;
   width: 100%;
-  height: 300px;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Hover */
-.gallery-item:hover img {
-  transform: scale(1.08);
+.gallery-img:hover {
+  transform: scale(1.02);
 }
 
-/* Overlay */
-.gallery-item::after {
-  content: "Ver imagen";
-  position: absolute;
-  inset: 0;
-  background: rgba(44, 122, 71, 0.55);
-  color: #fff;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.modal-content img {
+  max-height: 90vh;
+  object-fit: contain;
 }
 
-.gallery-item:hover::after {
-  opacity: 1;
-}
-
-/* Swiper controles */
-.swiper-button-next,
-.swiper-button-prev {
+.gallery-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
   color: #2c7a47;
 }
 
-.swiper-pagination-bullet-active {
-  background: #2c7a47;
+/* BOTÓN VOLVER ARRIBA */
+#backToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #57601E; /* verde del sitio */
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 999;
 }
 
-/* Mobile */
+/* Visible */
+#backToTop.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hover (desktop) */
+#backToTop:hover {
+  background-color: #25643b;
+  transform: translateY(-3px);
+}
+
+/* Mobile ajuste */
 @media (max-width: 576px) {
-  .gallery-item img {
-    height: 220px;
+  #backToTop {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
   }
 }
 

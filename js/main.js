@@ -39,46 +39,37 @@ function closeMenu() {
   overlay.classList.remove('active');
 }
 
-//carrusel 
-// ===============================
-// GALERÍA CARRUSEL (SWIPER)
-// ===============================
-document.addEventListener("DOMContentLoaded", function () {
-  const gallerySwiper = new Swiper(".gallery-swiper", {
-    slidesPerView: 1.2,
-    spaceBetween: 16,
-    loop: true,
+//carrusel
+document.addEventListener("DOMContentLoaded", () => {
+  const modalImg = document.getElementById("modalImage");
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+  document.querySelectorAll(".gallery-img").forEach(img => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.dataset.img;
+    });
+  });
+});
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+//Boton volver arriba
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTop = document.getElementById("backToTop");
 
-    breakpoints: {
-      768: {
-        slidesPerView: 2.5,
-      },
-      1024: {
-        slidesPerView: 3.5,
-      },
-    },
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
   });
 
-  // ===============================
-  // LIGHTBOX CONFIG
-  // ===============================
-  if (window.lightbox) {
-    lightbox.option({
-      resizeDuration: 200,
-      wrapAround: true,
-      alwaysShowNavOnTouchDevices: true,
-      fadeDuration: 200,
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
-  }
+  });
 });
+
+
+
 
