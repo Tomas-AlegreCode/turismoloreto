@@ -1,0 +1,51 @@
+/* GRID UBICACION */
+.ubicacion-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .ubicacion-grid {
+    grid-template-columns: 1.2fr 0.8fr; /* mapa respira más */
+    align-items: stretch;
+  }
+}
+
+/* MAPA */
+.mapa-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+}
+
+/* CARD CONTENEDOR */
+.info-card-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajuste card dentro de esta sección */
+.info-card {
+  width: 100%;
+}
+
+/* Card body texto */
+.info-card .card-body {
+  padding: 1.5rem;
+}
+
+.info-card .card-details li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
