@@ -1,0 +1,121 @@
+/* =========================
+   GRID GENERAL
+========================= */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* MOBILE */
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* TABLET */
+@media (min-width: 576px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+/* =========================
+   IMAGEN
+========================= */
+
+.card-img-wrapper {
+  position: relative;
+  height: 240px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.06);
+}
+
+/* Texto sobre imagen */
+.card-img-text {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+  white-space: normal;      /* permite saltos */
+  word-break: keep-all;     /* evita cortar palabras */
+  overflow-wrap: normal;    /* no rompe palabras */
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.card-body {
+  flex: 1;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Detalles (viñetas) */
+.card-details {
+  margin-top: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.card-details li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.card-details strong {
+  color: #2c7a47;
+  font-weight: 600;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
