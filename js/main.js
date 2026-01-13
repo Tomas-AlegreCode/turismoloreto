@@ -70,6 +70,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//Animaciones al hacer scroll
+document.querySelectorAll('.artesano-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('modalImg').src = card.dataset.img;
+    document.getElementById('modalNombre').textContent = card.dataset.nombre;
+    document.getElementById('modalRubro').textContent = card.dataset.rubro;
+    document.getElementById('modalDescripcion').textContent = card.dataset.descripcion;
+  });
+});
 
 
 
+
+//data descripcion 
+const cards = document.querySelectorAll('.artesano-card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('modalNombre').textContent = card.dataset.nombre;
+    document.getElementById('modalRubro').textContent = card.dataset.rubro;
+    document.getElementById('modalDescripcion').innerHTML = card.dataset.descripcion;
+    document.getElementById('modalImg').src = card.dataset.img;
+  });
+});

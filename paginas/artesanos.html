@@ -201,131 +201,293 @@
     <main>
         <!-- Banner img home 1 -->
         <div class="bannerhome-1">
-            <img src="../img/info-util/cartel-bal.jpg" alt="Imagen del muelle de loreto">
+            <img src="../img/artesanos.jpg" alt="Imagen del muelle de loreto">
             <div class="banner-text">
                 <div class="content">
-                    <h2>Informacion Util</h2>
+                    <h2>Artesanos</h2>
                     <p>Municipalidad de Loreto — descubre nuestros atractivos</p>
                 </div>
             </div>
         </div>
 
-        <!--Cards Info util -->
-        <section class="actividades container my-5 btn-ver-mas-section">
+        <!--Seccion Artesanos-->
+        <section class="container my-5">
 
-            <div class="cards-grid">
-                <!--Muni-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/cartel-bal.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text"> Municipalidad de Loreto</span>
+            <div id="artesanosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <!-- Gladys Sanchez -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Gladys Sanchez"
+                                    data-rubro="Manualidades en papel, tela y materiales reciclados."
+                                    data-descripcion="Telefono: 3781-410274.<br>Artesana dedicada a la creación de manualidades utilizando papel, reciclado y tela. Con una pasión por el arte y la creatividad, Gladys transforma materiales simples en hermosas piezas decorativas y funcionales. Sus trabajos incluyen desde tarjetas personalizadas hasta adornos para el hogar, todos elaborados con atención al detalle y un toque único. Ideal para quienes buscan regalos especiales o desean embellecer sus espacios con arte hecho a mano."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Gladys Sanchez</h5>
+                                        <p class="card-subtitle">Manualidades en papel, tela y materiales reciclados</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Josefina Canteros -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Josefina Canteros" data-rubro="Ysypo"
+                                    data-descripcion="Telefono: 3794-825677.<br>Artesana especializada en la creación de Ysypo, una tradicional artesanía que refleja la cultura y el patrimonio local. Josefina utiliza técnicas ancestrales para elaborar sus piezas, que van desde utensilios hasta objetos decorativos, todos hechos a mano con gran destreza y dedicación. Su trabajo no solo destaca por su belleza estética, sino también por su valor cultural, haciendo de cada creación una pieza única que conecta con las raíces de la comunidad."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Josefina Canteros</h5>
+                                        <p class="card-subtitle">Ysypo</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Alejandra Dacamina -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Alejandra Dacamina" data-rubro="Porongos para mate"
+                                    data-descripcion="Telefono: 3794-991273.<br>Artesana especializada en la creación de porongos para mate, Alejandra Dacamina combina tradición y funcionalidad en cada una de sus piezas. Utilizando técnicas artesanales, selecciona cuidadosamente los materiales para garantizar la calidad y durabilidad de sus porongos. Cada creación refleja un profundo respeto por la cultura del mate, ofreciendo a los amantes de esta bebida una experiencia auténtica y personalizada. Sus diseños varían desde lo clásico hasta lo innovador, adaptándose a los gustos y preferencias de sus clientes."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Alejandra Dacamina</h5>
+                                        <p class="card-subtitle">Porongo para mates</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Dirección:</strong> Tomás Ubeda s/n entre 9 de Julio y Mitre</li>
-                        </ul>
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+                            <!-- Fabiana Rodriguez -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Fabiana Rodriguez" data-rubro="Hilo, crochet y tejido"
+                                    data-descripcion="Telefono: 3781-405452.<br>Artesana experta en hilo, crochet y tejido, Fabiana Rodriguez crea piezas únicas que combinan tradición y creatividad. Con una habilidad excepcional para trabajar con diferentes tipos de hilos y técnicas de crochet, Fabiana elabora desde prendas de vestir hasta accesorios y decoraciones para el hogar. Cada creación refleja su dedicación al arte del tejido, ofreciendo productos que no solo son hermosos, sino también funcionales y duraderos. Su trabajo es ideal para quienes buscan artículos hechos a mano con un toque personal y artesanal."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Fabiana Rodriguez</h5>
+                                        <p class="card-subtitle">Hilo, crochet y tejido</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Rosa Cardozo -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Rosa Cardozo" data-rubro="Porcelana, cuerina, tela y madera"
+                                    data-descripcion="telefono: 3794-252958.<br>Artesana versátil especializada en la creación de piezas utilizando porcelana, cuerina, tela y madera. Rosa Cardozo combina estas diversas técnicas y materiales para elaborar productos únicos que van desde objetos decorativos hasta accesorios funcionales. Su habilidad para trabajar con diferentes texturas y formas le permite crear artículos que destacan por su originalidad y calidad artesanal. Cada pieza refleja su dedicación al arte y su pasión por transformar materiales simples en obras de arte."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Rosa Cardozo</h5>
+                                        <p class="card-subtitle">Porcelana, cuerina, tela y madera</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Zulma Villanueva -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Zulma Villanueva" data-rubro="Cuerina"
+                                    data-descripcion="Telefono: 3781-484675.<br>Artesana especializada en la creación de productos de cuerina, Zulma Villanueva combina habilidad y creatividad para elaborar una variedad de artículos que van desde accesorios de moda hasta elementos decorativos para el hogar. Con un enfoque en la calidad y el diseño, Zulma transforma la cuerina en piezas únicas que reflejan tanto la tradición artesanal como las tendencias contemporáneas. Su trabajo es ideal para quienes buscan productos duraderos y estéticamente atractivos hechos a mano con dedicación y pasión."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Zulma Villanueva</h5>
+                                        <p class="card-subtitle">Cuerina</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+                            <!--Gonzalo Rios-->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Gonzalo Rios" data-rubro="Cuero vacuno"
+                                    data-descripcion="Telefono: 3781-484995.<br>Artesano especializado en la elaboración de productos de cuero vacuno, Gonzalo Rios combina técnicas tradicionales con un diseño contemporáneo para crear piezas únicas y duraderas. Su trabajo abarca desde accesorios de moda hasta artículos funcionales para el hogar, todos elaborados con atención al detalle y un compromiso con la calidad. Cada creación refleja su pasión por el arte del cuero, ofreciendo a sus clientes productos que no solo son estéticamente atractivos, sino también resistentes y prácticos."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Gonzalo Rios</h5>
+                                        <p class="card-subtitle">Cuero Vacuno</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Francisco Federico-->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Francisco Federico" data-rubro="Tacuara"
+                                    data-descripcion="Telefono: 0113110657.<br>Artesano especializado en la creación de productos de tacuara, Francisco Federico combina técnicas tradicionales con un enfoque innovador para elaborar piezas únicas que reflejan la cultura y el patrimonio local. Su trabajo abarca desde utensilios hasta objetos decorativos, todos hechos a mano con gran destreza y dedicación. Cada creación destaca por su belleza estética y su valor cultural, haciendo de cada pieza una obra de arte que conecta con las raíces de la comunidad."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Francisco Federico</h5>
+                                        <p class="card-subtitle">Tacuara</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Claudia Meza -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Claudia Meza" data-rubro="Almohadones, bordados y croché"
+                                    data-descripcion="Telefono: 3781-482933.<br>Artesana dedicada a la creación de almohadones, bordados y croché, Claudia Meza combina técnicas tradicionales con un enfoque artístico para elaborar piezas únicas y decorativas. Su trabajo abarca desde almohadones personalizados hasta artículos bordados y tejidos a crochet, todos hechos a mano con gran atención al detalle y un compromiso con la calidad. Cada creación refleja su pasión por el arte textil, ofreciendo a sus clientes productos que no solo son estéticamente atractivos, sino también funcionales y duraderos."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Claudia Meza</h5>
+                                        <p class="card-subtitle">Almohadones, bordados y croché</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- SLIDE 4 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+
+                            <!--Rosa Esquivel-->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Rosa Esquivel" data-rubro="Muñecos tejidos"
+                                    data-descripcion="Telefono: 3781-409702.<br>Artesana dedicada a la creación de muñecos tejidos, Rosa Esquivel combina creatividad y habilidad artesanal para elaborar piezas únicas que encantan tanto a niños como a adultos. Utilizando técnicas tradicionales de tejido, Rosa da vida a sus muñecos con detalles cuidadosos y diseños originales, convirtiéndolos en juguetes y objetos decorativos llenos de personalidad. Cada muñeco refleja su pasión por el arte del tejido, ofreciendo productos hechos a mano que son perfectos para regalar o coleccionar."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Rosa Esquivel</h5>
+                                        <p class="card-subtitle">Muñecos Tejidos</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Diana Carolina Acuña-->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card artesano-card" data-bs-toggle="modal" data-bs-target="#artesanoModal"
+                                    data-nombre="Diana Carolina Acuña" data-rubro="Porcelana"
+                                    data-descripcion="Telefono: 3794-807433.<br>Artesana especializada en la creación de piezas de porcelana, Diana Carolina Acuña combina técnicas tradicionales con un enfoque artístico para elaborar objetos únicos y delicados. Su trabajo abarca desde figuras decorativas hasta vajillas personalizadas, todas hechas a mano con gran atención al detalle y un compromiso con la calidad. Cada creación refleja su pasión por el arte de la porcelana, ofreciendo a sus clientes productos que no solo son estéticamente atractivos, sino también funcionales y duraderos."
+                                    data-img="./img/artesanos/juan.jpg">
+
+                                    <div class="card-img-wrapper">
+                                        <img src="./img/artesanos/juan.jpg" class="card-img-top" alt="Juan Pérez">
+                                    </div>
+
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Diana Carolina Acuña</h5>
+                                        <p class="card-subtitle">Porcelana</p>
+                                        <span class="ver-mas">Ver más…</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONTROLES -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#artesanosCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#artesanosCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
                 </div>
-
-                <!--Hospital-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/hospital.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Hospital</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Dirección:</strong> Comercio s/n entre Armengol Alegre y Julián Gonzalez</li>
-                            <li><strong>Telefono:</strong>3781-483228</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Policia-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/policia.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Policia Local</span>
-                    </div>
-
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Telefono:</strong>3781-483023</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Bomberos-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/bomberos.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Bomberos Voluntarios</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Telefono:</strong>3795-003956</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Farmacias-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/farmacias.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Farmacias</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Botiquín Iberá:</strong> 3781-416194</li>
-                            <li><strong>Farmacia Cruz de los Milagros:</strong> 3781-497059 / 11-30721655</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Combustibles-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/lubricentro.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Combustibles</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Lubricentro los Fachas:</strong> Av. 25 de Mayo entre Brasil y Rivadavia</li>
-                            <li><strong>Lubricentro Nahuel:</strong> Av. 25 de Mayo (ingreso al pueblo)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Taller Mecanico-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/mecanico.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Taller Mecanico Priscila</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Dirección:</strong> Av. 25 de Mayo (ingreso al pueblo) </li>
-                            <li><strong>Telefono:</strong> +541131305201</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Centro informes-->
-                <div class="card info-card">
-                    <div class="card-img-wrapper">
-                        <img src="../img/info-util/centro.jpg" class="card-img-top" alt="Municipalidad">
-                        <span class="card-img-text">Centro de Informes</span>
-                    </div>
-                    <div class="card-body">
-                        <ul class="card-details">
-                            <li><strong>Dirección:</strong> Av. 25 de Mayo y Peatonal Sabas Gallardo</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
         </section>
+
+        <!--artesanos vista grande modal-->
+        <div class="modal fade" id="artesanoModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <button type="button" class="btn-close ms-auto m-3" data-bs-dismiss="modal"></button>
+
+                    <div class="modal-body">
+                        <img id="modalImg" class="img-fluid rounded mb-3" alt="">
+
+                        <h3 id="modalNombre"></h3>
+                        <h5 id="modalRubro" class="text-muted mb-3"></h5>
+                        <p id="modalDescripcion"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 

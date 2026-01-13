@@ -1,0 +1,28 @@
+//import variables
+@import '../variables/variables';
+
+.artesano-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artesano-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.artesano-card .card-body {
+  text-align: center;
+}
+
+.artesano-card .card-subtitle {
+  font-size: 0.9rem;
+  color: #2c7a47;
+}
+
+.ver-mas {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #2c7a47;
+}
