@@ -5,10 +5,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-title: 'Cinzel', serif;
+  --font-text: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   background: #F5F3EF;
   color: #333;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.card-title {
+  font-family: var(--font-title);
+}
+
+p,
+.activity-card {
+  font-family: var(--font-text);
 }
 
 /* =========================
@@ -238,7 +254,10 @@ body {
   max-height: 800px;
   display: block;
   object-fit: cover;
-  object-position: var(--img-focus, center 50%);
+  /* 🔥 foco configurable por banner o imagen  
+  📌 Primer valor → eje X horizontal
+  📌 Segundo valor → eje Y vertical*/
+  object-position: var(--img-focus, center center);
   z-index: 0;
 }
 

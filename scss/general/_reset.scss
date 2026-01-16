@@ -8,8 +8,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-title: 'Cinzel', serif;
+  --font-text: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text); 
   background: $blanco-logo;
   color: $text;
+
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-title,
+.card-title {
+  font-family: var(--font-title);
+}
+p,
+.activity-card{
+  font-family: var(--font-text);
 }
