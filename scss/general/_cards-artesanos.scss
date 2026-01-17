@@ -1,9 +1,14 @@
-//import variables
+// import variables
 @import '../variables/variables';
+
+/* =========================
+   CARDS ARTESANOS
+========================= */
 
 .artesano-card {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .artesano-card:hover {
@@ -25,4 +30,66 @@
   margin-top: 0.5rem;
   font-weight: 600;
   color: #2c7a47;
+}
+
+/* =========================
+   FIX CARRUSEL – DOS FILAS
+========================= */
+
+#artesanosCarousel .carousel-item {
+  padding: 1rem 0;
+}
+
+#artesanosCarousel .row {
+  align-items: stretch;
+}
+
+/* =========================
+   FLECHAS DE NAVEGACIÓN
+========================= */
+
+#artesanosCarousel .carousel-control-prev-icon,
+#artesanosCarousel .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-size: 70% 70%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  filter: invert(32%) sepia(90%) saturate(900%) hue-rotate(5deg);
+  transition: transform 0.2s ease;
+}
+
+#artesanosCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
+#artesanosCarousel .carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.15);
+}
+
+
+/* =========================
+   ARTESANOS – 2 FILAS EN DESKTOP
+========================= */
+
+@media (min-width: 992px) {
+  #artesanosCarousel .carousel-item .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #artesanosCarousel .carousel-item .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* =========================
+   ÚLTIMO SLIDE CENTRADO
+========================= */
+
+#artesanosCarousel .carousel-item:last-child .row {
+  justify-content: center;
+}
+
+#artesanosCarousel .carousel-item:last-child .col-lg-4 {
+  flex: 0 0 45%;
+  max-width: 45%;
 }

@@ -94,3 +94,4 @@ cards.forEach(card => {
     document.getElementById('modalImg').src = card.dataset.img;
   });
 });
+
