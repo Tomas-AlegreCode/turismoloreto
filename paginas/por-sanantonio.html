@@ -43,6 +43,8 @@
     <link rel="icon" href="../img/LOGOS/Isologo-en-naranja-favi.png" type="image/png">
     <link rel="shortcut icon" href="../img/LOGOS/Isologo-en-naranja-favi.png" type="image/png">
 
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -241,6 +243,7 @@
             </div>
         </div>
 
+        <!-- Info portal san antonio -->
         <section class="txt-info">
 
             <p>
@@ -356,7 +359,7 @@
         </div>
 
         <!--Galeria de experiencias-->
-        <section class="container py-5">
+        <section class="container py-5" data-aos="fade-up">
             <h2 class="gallery-title">Galería de Recuerdos</h2>
 
             <div id="galleryCarousel" class="carousel slide">
@@ -462,6 +465,16 @@
 
     <!-- JS -->
     <script src="../js/main.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
 
 </body>
 

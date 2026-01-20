@@ -41,6 +41,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <!--Boton top-->
@@ -218,8 +221,8 @@
       </div>
     </div>
 
-    <!-- Que hacer banner -->
-    <div class="container">
+    <!-- Banner que hacer  -->
+    <div class="container" data-aos="zoom-in">
       <section class="quehacer">
         <div class="quehacer-text">
           <h2>
@@ -230,7 +233,7 @@
     </div>
 
     <!--Cards Que hacer -->
-    <section class="actividades container my-5 btn-ver-mas-section">
+    <section class="actividades container my-5 btn-ver-mas-section" data-aos="slide-up">
 
       <div class="cards-grid">
 
@@ -301,8 +304,8 @@
       </div>
     </section>
 
-    <!--Donde Alojarse banner-->
-    <div class="container">
+    <!--Banner donde Alojarse -->
+    <div class="container" data-aos="zoom-in">
       <section class="quehacer">
         <div class="quehacer-text">
           <h2>
@@ -313,7 +316,7 @@
     </div>
 
     <!-- Cards Donde Alojarse -->
-    <section class="actividades container my-5 btn-ver-mas-section">
+    <section class="actividades container my-5 btn-ver-mas-section" data-aos="slide-up">
 
       <div class="cards-grid">
 
@@ -385,8 +388,8 @@
 
     </section>
 
-    <!--Donde Comer banner-->
-    <div class="container">
+    <!--Banner donde Comer-->
+    <div class="container" data-aos="zoom-in">
       <section class="quehacer">
         <div class="quehacer-text">
           <h2>
@@ -397,8 +400,7 @@
     </div>
 
     <!-- Cards donde comer -->
-    <section class="actividades container my-5
-    btn-ver-mas-section">
+    <section class="actividades container my-5 btn-ver-mas-section" data-aos="slide-up">
 
       <div class="cards-grid">
 
@@ -513,6 +515,17 @@
 
   <!-- Script JS -->
   <script src="js/main.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      easing: 'ease-out-cubic',
+      once: true
+    });
+  </script>
+
 </body>
 
 </html>

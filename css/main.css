@@ -988,8 +988,8 @@ body {
 #artesanosCarousel .carousel-control-next-icon {
   width: 3rem;
   height: 3rem;
-  background-size: 70% 70%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-size: 50% 50%;
+  background-color: #57601E;
   border-radius: 50%;
   filter: invert(32%) sepia(90%) saturate(900%) hue-rotate(5deg);
   transition: transform 0.2s ease;

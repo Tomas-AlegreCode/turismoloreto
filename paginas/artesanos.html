@@ -43,6 +43,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <!--Boton top-->
@@ -239,7 +243,7 @@
         </div>
 
         <!--Seccion Artesanos-->
-        <section class="container my-5">
+        <section class="container my-5" data-aos="zoom-in">
 
             <div id="artesanosCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -554,6 +558,17 @@
 
     <!-- Script JS -->
     <script src="../js/main.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
+
 </body>
 
 </html>
