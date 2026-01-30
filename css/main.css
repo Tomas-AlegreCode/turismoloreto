@@ -1043,4 +1043,8 @@ p, span, li, a, .text-muted {
   font-weight: 400;
 }
 
+.card.draft {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
